@@ -44,10 +44,6 @@ function Cart() {
     }
 
     function handlePlaceOrder() {
-        if (!userData) {
-            toast.error("Please login to place order");
-            return;
-        }
         toast.success("Order placed successfully");
         dispatch(clearCart());
     }
